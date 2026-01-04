@@ -3,7 +3,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyD46lLeuP-0V2QsBVpI25jAXfGeDpLAocA"
+os.environ["GOOGLE_API_KEY"] = ""
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-3-flash-preview",
@@ -43,3 +43,4 @@ response = chain.invoke({
 
 print("\nResult:")
 print(response.content[0]["text"])
+
